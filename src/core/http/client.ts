@@ -11,7 +11,7 @@ export class HttpClient {
       throw new MindStudioError("API key is required", "missing_api_key", 400);
     }
 
-    const baseURL = config.baseUrl || "https://api.mindstudio.ai/developer/v2";
+    const baseURL = config.baseUrl || "https://v1.mindstudio-api.com/developer/v2";
     this.http = axios.create({
       baseURL,
       headers: {
